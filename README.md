@@ -1,4 +1,4 @@
-# Mashbot — SE3002 Assignment 01 MVP
+# Mashbot — Software Quality Evaluation Case Study
 
 Social-media campaign manager, implementing a 7 FR + 3 NFR scope drawn from the Mashbot SRS
 (`2010 - mashboot.pdf`) for the SE3002 "Quality Evaluation of AI-Generated Software" assignment
@@ -95,7 +95,7 @@ Open [http://localhost:3000](http://localhost:3000). You will be redirected to `
   update public.profiles set account_type = 'admin' where email = 'you@example.com';
   ```
 
-## Baseline & branching
+## Original evaluation version and portfolio branch
 
 The assignment requires freezing "the first complete runnable version" before running
 SonarQube and executing tests, and preserving it separately from any later defect fixes.
@@ -103,7 +103,7 @@ Workflow used in this repo:
 
 1. The commit tagged `baseline-v1` (see `git tag`) is the frozen baseline submitted for
    SonarQube analysis and used for all Part 3 test execution.
-2. Defect fixes found during testing are committed after that tag, on top of `main`, so the
+2. Defect fixes found during testing are committed after that tag, on a separate portfolio branch, so the
    frozen baseline remains reconstructible via `git checkout baseline-v1`.
 
 ## AI-assisted development
@@ -121,3 +121,10 @@ npm run build   # production build
 npm run start   # run the production build
 npm run lint    # ESLint
 ```
+
+
+## Portfolio context
+
+This is an academic team project involving Syed Muhammad Rayyan Hassan. The existing `master` branch and `baseline-v1` tag are preserved as evaluation evidence. Portfolio documentation lives separately on `portfolio/2026-11-professionalize`; it is not part of the original evaluated submission.
+
+The history records intentionally introduced reliability, security, and maintainability issues for coursework evaluation. Do not deploy this evaluation baseline as a production service. [Evidence and limitations](docs/PORTFOLIO.md) explain what is verifiable without attributing unverified individual work.
